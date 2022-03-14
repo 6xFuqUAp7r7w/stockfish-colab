@@ -90,7 +90,7 @@ const (
 func main() {
 	args := os.Args[1:]
 	if len(args) < 2 {
-		log.Printf("ERROR usage: colab-katago SSH_INFO_GOOGLE_DRIVE_FILE_ID USER_PASSWORD")
+		log.Printf("ERROR usage: colab-stockfish SSH_INFO_GOOGLE_DRIVE_FILE_ID USER_PASSWORD")
 		return
 	}
 	fileId := args[0]
@@ -159,7 +159,7 @@ func main() {
 	session.Stderr = os.Stderr
 	session.Stdin = os.Stdin
 
-	cmd := fmt.Sprintf("%s gtp -model %s -config %s", KataGoBin, KataGoWeightFile, configFile)
+	cmd := fmt.Sprintf("%s gtp -model %s -config %s", KataGoBin)
 	log.Printf("DEBUG running commad:%s\n", cmd)
 	session.Run(cmd)
 }
