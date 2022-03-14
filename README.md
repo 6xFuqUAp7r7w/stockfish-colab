@@ -1,4 +1,4 @@
-# colab-dlshogi-gd
+# colab-stockfish-gd
 
 This program has been modified from the original colab-katago to store SSH information on Google Drive.
 
@@ -16,7 +16,7 @@ https://www.h-eba.com/Lizzie/gck.html
 
 # Build
 ```
-GOOS=darwin GOARCH=amd64 go build -o ./bin/colab-katago-for-mac 
-GOOS=linux GOARCH=amd64 go build -o ./bin/colab-katago-for-linux
-GOOS=windows GOARCH=amd64 go build -o ./bin/colab-katago-for-windows
+GOOS=darwin GOARCH=amd64 go build -o ./bin/colab-stockfish-for-mac 
+GOOS=linux GOARCH=amd64 go build -o ./bin/colab-stockfish-for-linux
+GOOS=windows GOARCH=amd64 go build -o ./bin/colab-stockfish-for-windows
 ```
